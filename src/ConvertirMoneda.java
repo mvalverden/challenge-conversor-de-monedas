@@ -6,7 +6,6 @@ public class ConvertirMoneda {
         double cantidadConvertida;
 
         Monedas monedas = consulta.buscarMoneda(monedaBase, monedaDestino);
-        //System.out.println("El tipo de cambio es: \n" + monedaBase + " = " + monedas.conversion_rate() + " " + monedaDestino);
         System.out.println("Ingrese el valor en " + monedaBase + " que deseas convertir:");
         cantidad = Double.parseDouble(lectura.nextLine());
         cantidadConvertida = cantidad * monedas.conversion_rate();
